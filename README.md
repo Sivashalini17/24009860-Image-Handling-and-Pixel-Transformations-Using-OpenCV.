@@ -50,6 +50,7 @@ import matplotlib.pyplot as plt
 img =cv2.imread('Eagle_in_Flight.jpg',cv2.IMREAD_COLOR)
 img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 ```
+
 2. Print the image width, height & Channel.
 
 ```
@@ -68,11 +69,8 @@ plt.show()
 
 ```
 import cv2
-
 image = cv2.imread("input.jpg")
-
 cv2.imwrite("output.png", image)
-
 print("Image saved successfully as output.png")
 ```
 
@@ -181,6 +179,7 @@ plt.subplot(1,3,1), plt.imshow(img_rgb), plt.title("Original Image"), plt.axis("
 plt.subplot(1,3,2), plt.imshow(img_brighter), plt.title("Brighter Image"), plt.axis("off")
 plt.subplot(1,3,3), plt.imshow(img_darker), plt.title("Darker Image"), plt.axis("off")
 plt.show()
+```
 
 18. Modify the image contrast.
 
